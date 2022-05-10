@@ -23,7 +23,7 @@ body {
     color: var(--secondary-color);
     right: 88rem;
     font-size: x-large;
-    left: 60rem;
+    left: 35rem;
 }
 
 .headerContainer {
@@ -40,7 +40,7 @@ body {
     background-color: var(--primary-color);
     position: relative;
     top: 43rem;
-    left: 15rem;
+    left: 4rem;
     width: 30rem;
     height: 5rem;
     box-shadow: 0 0 25px 0 rgb(0, 0, 0, 0.4);
@@ -85,10 +85,11 @@ a {
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+    left: 0.3rem;
 }
 
 .content {
-    width: 20%;
+    width: 30%;
     height: 20%;
     margin: 15px;
     box-sizing: border-box;
@@ -179,15 +180,15 @@ button {
 .page2p {
     position: absolute;
     bottom: 0%;
-    top: 150rem;
+    top: 200rem;
     font-size: 23px;
-    left: 38%;
+    left: 32%;
 }
 
 .page2 .page2link {
     position: absolute;
-    top: 157rem;
-    left: 47%;
+    top: 204rem;
+    left: 44%;
     font-size: 20px;
     background-color: black;
     color: white;
@@ -218,8 +219,8 @@ button {
 
 .footerdiv {
     position: absolute;
-    right: 80rem;
-    font-size: x-large;
+    right: 40rem;
+    font-size: large;
     padding: 5rem;
     margin-left: 20rem;
     color: var(--primary-color);
@@ -234,15 +235,15 @@ button {
 .big {
     position: relative;
     top: 45rem;
-    font-size: 27px;
+    font-size: 20px;
     align-items: center;
     color: var(--secondary-color);
 }
 
 .vid {
     position: relative;
-    width: 65%;
-    height: 65rem;
+    width: 60%;
+    height: 40rem;
     top: 47rem;
 }
 
@@ -262,7 +263,7 @@ button {
     text-align: center;
     width: 100%;
     height: 40rem;
-    top: 230rem;
+    top: 190rem;
     right: 0rem;
 }
 
@@ -286,10 +287,10 @@ button {
     position: relative;
     text-align: center;
     width: 70%;
-    left: 29rem;
+    left: 17rem;
     bottom: 35rem;
     color: white;
-    font-size: 26;
+    font-size: 22;
     font-weight: 700;
 }
 
