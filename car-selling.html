@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Car Selling</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/favicon.png">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/car-selling.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <!----------------------------------------------- navbar ------------------------------------------------->
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <!-- theme changer button -->
+        <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <img class="logo-img" src="img/logo.png" alt="">
+        <a href="#home" class="logo"> <span>Dream</span>Wheels </a>
+
+        <nav class="navbar">
+            <a href="/index.html#home">home</a>
+            <a href="/index.html#vehicles">vehicles</a>
+            <a href="/index.html#services">services</a>
+            <a href="/index.html#featured">featured</a>
+            <a href="/index.html#team">team</a>
+            <a href="/index.html#contact">contact</a>
+        </nav>
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+
+    </header>
+
+    <!-- login form -->
+    <div class="login-form-container">
+
+        <span id="close-login-form" class="fas fa-times"></span>
+
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p> forget your password <a href="#">click here</a> </p>
+            <input type="submit" value="login" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn"> google </a>
+                <a href="#" class="btn"> facebook </a>
+            </div>
+            <p> don't have an account <a href="#">create one</a> </p>
+        </form>
+
+    </div>
+
+
+    <div class="title">
+        <h2>BMW i8</h2>
+        <div class="title-underline"></div>
+    </div>
+    <div class="grid">
+        <div class="grid2">
+            <div id="car">
+                <div class="carimg">
+                    <img src="https://jf-staeulalia.pt/img/other/81/collection-car-png-transparent-images.png" alt="BMW i8" height="225px" />
+                </div>
+            </div>
+            <div id="ico">
+                <div class="icon">
+                    <img src="./img/Fuel.svg" height="44px" />
+                </div>
+                <div class="text">
+                    <p>Fuel Capacity <br/> 00 Liters</p>
+                </div>
+                <div class="icon">
+                    <img src="./img/horse.svg" height="44px" />
+                </div>
+                <div class="text">
+                    <p>Horse Power <br/> 00 Power</p>
+                </div>
+                <div class="icon">
+                    <img src="./img/Air.svg" height="44px" />
+                </div>
+                <div class="text">
+                    <p>Air Bags <br/> 00 Airbags</p>
+                </div>
+                <div class="icon">
+                    <img src="./img/War.svg" height="44px" />
+                </div>
+                <div class="text">
+                    <p>Warranty <br/> 00 years</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form action="/action_page.php">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" id="state" name="state">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="zip">Zip</label>
+                                        <input type="text" id="zip" name="zip">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Eligible Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Exp Year</label>
+                                        <input type="text" id="expyear" name="expyear">
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <label>
+            <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+            </label>
+                        <input type="submit" value="Continue to checkout" class="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section class="price">
+        <div class="col">
+            <p style="color: white;">From: <br/> 200,000EGP</p>
+        </div>
+        <div class="col">
+            <p style="color: white;">To: <br/> 300,000EGP</p>
+        </div>
+
+    </section>
+    <section class="price">
+        <div>
+            <p style="color: white;">Min Deposit: <br/> 200,000EGP</p>
+        </div>
+        <div>
+            <p style="color: white;">Min Installment: <br/> 300,000EGP</p>
+        </div>
+    </section>
+
+    </div>
+    <div class="title">
+        <h2 style="color:var(--secondary-color); float: center;">Featured</h2>
+        <div class="title-underline"></div>
+    </div>
+    <div id="photos-container">
+
+
+        <div class="card">
+            <img src="./img/car-1.png" alt="motorcyle">
+            <a href="#">
+                <p>Mercedes-Benz <br/> Tab for Details</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/car-2.png" alt="motorcyle">
+            <a href="#">
+                <p>MG <br/> Tab for Details</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/car-3.png" alt="julio nery">
+            <a href="#">
+                <p>Ford<br/> Tab for Details</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/car-4.png" alt="kangoo uv">
+            <a href="#">
+                <p>Audi<br/> Tab for Details</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/car-5.png" alt="Utility vehicle">
+            <a href="#">
+                <p>Kia <br/> Tab for Details</p>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/car-7.png" alt="truck">
+            <a href="#">
+                <p>Kia <br/> Tab for Details</p>
+            </a>
+        </div>
+    </div>
+
+
+    <!-------------------------------------------------------- footer -------------------------------------------->
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Egypt </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Japan </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> France </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Russia </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="#vehicles"> <i class="fas fa-arrow-right"></i> vehicles </a>
+                <a href="#services"> <i class="fas fa-arrow-right"></i> services </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+                <a href="#team"> <i class="fas fa-arrow-right"></i> team </a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +201144099153 </a>
+                <a href="#"> <i class="fas fa-phone"></i> +201555510374 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> abdonasr@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> Helwan University, Egypt </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+
+        </div>
+
+        <div class="credit"> created by <span><b>DreamWheel Team</b></span> || ©️ all rights reserved </div>
+
+    </section>
+
+
+
+
+
+    <!-- custom script file link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

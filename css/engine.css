@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+:root {
+    --primary: #BA181B;
+    --secondary: #E5383B;
+    --text: #0B090A;
+    --light-color: #666;
+    --footer: #E5383B;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --White: white;
+}
+
+.dark {
+    --primary: #BA181B;
+    --secondary: #E5383B;
+    --text: white;
+    --light-color: rgb(188, 188, 188);
+    --dark: #0B090A;
+    --box-shadow: 0 .5rem 1rem rgba(249, 249, 249, 0.105);
+    --border: .1rem solid rgba(251, 251, 251, 0.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+
+/************************************************* navbar ***********************************************/
+
+.heading {
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 4.5rem;
+    color: var(--text);
+}
+
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--secondary);
+    z-index: -1;
+    clip-path: polygon(0 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--secondary);
+    color: var(--White);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover {
+    background: var(--primary);
+    /* color: var(--White); */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    z-index: 1000;
+    /* background-color: whitefff; */
+    background: var(--dark);
+}
+
+.header.dark {
+    background: var(--dark);
+}
+
+body.dark {
+    background: var(--dark);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: white;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+.header .logo {
+    font-size: 3rem;
+    color: var(--text);
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.header .logo-img {
+    width: 131px;
+    height: 40px;
+    /* position: relative; */
+    margin-left: 50px;
+}
+
+.header .logo span {
+    color: var(--primary);
+}
+
+.home span {
+    color: var(--primary);
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--text);
+    display: inline-flex;
+}
+
+.header .navbar a:hover {
+    color: var(--primary);
+    /* background-color: var(--dark); */
+}
+
+.header .navbar {
+    /* background-color: var(--dark); */
+    color: var(--dark);
+}
+
+#login-btn .btn {
+    margin-top: 0;
+}
+
+#login-btn i {
+    display: none;
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+
+.header.active {
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    display: none;
+}
+
+
+/************************************************* navbar end ****************************************/
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    /* 3la 3smb 3dd el elements
+    view port*/
+    display: flex;
+    align-items: center;
+    background: url(../img/AdobeStock_411487568-scaled.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: whiteFFF;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    margin-top: 10px;
+    color: whitefff;
+    font-weight: 700;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary);
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+}
+
+.main-btn:hover {
+    background-color: var(--secondary);
+    transform: scale(1.1, 1.1);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card {
+    background-color: white;
+    width: 41.25em;
+    box-shadow: 0 4px 25px rgba(1, 1, 1, 30%);
+    /*top bot then right or left negitave for left then tol el shadow */
+    border-radius: 10px;
+    /*curve*/
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: var(--primary);
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: var(--primary);
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.info p {
+    font-size: 1.2em;
+}
+
+
+/************************************************* footer **************************************************/
+
+.footer {
+    background: var(--footer);
+    padding-bottom: 8rem;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--text);
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    color: #EDF2F4;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: #161A1D;
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 2rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    margin-top: 2rem;
+    border-top: var(--border);
+    font-size: 2rem;
+    color: #EDF2F4;
+}
+
+.footer span {
+    color: var(--text);
+}
+
+
+/* responsive design */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 2rem;
+    }
+    .header.active {
+        padding: 2rem;
+    }
+    section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-btn {
+        display: block;
+    }
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+    #login-btn .btn {
+        display: none;
+    }
+    #login-btn i {
+        display: block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .header .navbar a {
+        margin: 2rem;
+        display: block;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+}
