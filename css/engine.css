@@ -244,14 +244,14 @@ section {
 }
 
 .main h2 {
-    color: whiteFFF;
+    color: white;
     font-size: 3em;
     font-weight: 600;
 }
 
 .main h3 {
     margin-top: 10px;
-    color: whitefff;
+    color: white;
     font-weight: 700;
     font-size: 2em;
     letter-spacing: 1px;
